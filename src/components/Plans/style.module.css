@@ -1,0 +1,182 @@
+.container {
+    margin-top: 2rem;
+    padding: 4rem 0;
+}
+
+.textglobal {
+    text-align: center;
+
+    h2 {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+        font-weight: var(--weight-main);
+        color: var(--txt-black-main);
+    }
+
+    p {
+        padding: 1rem 0;
+        color: var(--txt-desc);
+        font-weight: 450;
+    }
+}
+
+.pricing {
+    max-width: 230px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+
+    border: 1px solid var(--border-b-sec);
+    border-radius: 8px;
+
+    padding: 3px 3px;
+
+    button {
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+
+        font-size: 14px;
+        padding: 14px 0px;
+        width: 110px;
+        border-radius: 8px;
+    }
+
+    .btnmes {
+        button {
+            background-color: transparent;
+            color: var(--color-gray);
+        }
+    }
+
+    .btnano {
+        button {
+            color: var(--bg-white);
+            background-color: var(--color-gray);
+        }
+    }
+}
+
+.cards {
+    max-width: 56%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    .card {
+        width: 320px;
+        height: auto;
+        padding: 20px;
+
+        border: 1px solid var(--border-b-sec);
+        border-radius: 20px;
+
+        .tiposervice {
+
+            h2 {
+                font-size: clamp(1.5rem, 3.5vw, 2rem);
+                color: var(--txt-black-main);
+            }
+
+            p {
+                margin-top: 10px;
+                font-weight: 480;
+                color: var(--txt-desc);
+            }
+        }
+
+        .valor {
+            margin-top: 10px;
+
+            display: flex;
+            align-items: baseline;
+
+            h2 {
+                color: var(--txt-black-main);
+            }
+
+            h1 {
+                font-size: clamp(3.5rem, 3.5vw, 2rem);
+                color: var(--txt-black-main);
+            }
+        }
+
+        button {
+            margin-top: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            padding: 16px 0px;
+            width: 100%;
+
+            border: none;
+            border-radius: 8px;
+
+            background-color: var(--color-gray);
+            color: var(--bg-white);
+        }
+
+        .descservice {
+            margin-top: 30px;
+
+            .des {
+                margin-top: 20px;
+
+                display: flex;
+                gap: 15px;
+                align-items: flex-start;
+
+                svg {
+                    width: 22px;
+                    height: 22px;
+                    min-width: 22px;
+                    min-height: 22px;
+                    flex-shrink: 0;
+                    color: var(--icon-color);
+                }
+
+                p {
+                    font-weight: 480;
+                    color: var(--txt-desc);
+                }
+            }
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        max-width: 90%;
+    }
+
+    .cards .card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .cards .card {
+        max-width: 100%;
+    }
+}

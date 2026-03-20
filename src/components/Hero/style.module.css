@@ -1,0 +1,182 @@
+/* CONTAINER */
+.container {
+    max-width: 56%;
+    padding: 0 2rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+/* HERO */
+.herosection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* TAG SUPERIOR */
+.toptag {
+    display: inline-block;
+    color: var(--txt-desc);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-b-sec);
+}
+
+/* WRAPPER DO TITULO */
+.headlinewrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* TITULO */
+.headlinewrapper h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    text-transform: uppercase;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: var(--txt-black-main);
+    margin: 0;
+
+    white-space: nowrap;
+    /* impede quebra automática */
+}
+
+/* mantém os br funcionando */
+.headlinewrapper h1 br {
+    display: block;
+}
+
+/* BADGES */
+.badge {
+    position: absolute;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: var(--bg-white);
+    font-weight: 700;
+    z-index: 10;
+    box-shadow: var(--badge-box-shadow);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ECOMMERCE */
+.badge.ecommerce {
+    background-color: #22d3ee;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-2deg);
+    font-size: 36px;
+    height: 80px;
+}
+
+/* FOODTECH */
+.badge.foodtech {
+    background-color: #a78bfa;
+    top: 40%;
+    left: -20px;
+    transform: rotate(3deg);
+    font-size: 36px;
+    height: 80px;
+}
+
+/* USER */
+.badge.user {
+    background-color: #1f2937;
+    padding: 8px 16px;
+    top: 38%;
+    right: 18%;
+    transform: rotate(6deg);
+    border-radius: 50px;
+    font-size: 28px;
+}
+
+.badge.user::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    border-width: 6px 6px 0;
+    border-style: solid;
+    border-color: #1f2937 transparent transparent transparent;
+}
+
+/* FINTECH */
+.badge.fintech {
+    background-color: #34d399;
+    bottom: 5%;
+    right: 0;
+    transform: rotate(-3deg);
+    font-size: 36px;
+    height: 80px;
+}
+
+/* DESCRIÇÃO */
+.tittledescloja {
+    display: flex;
+    justify-content: center;
+}
+
+.tittledescloja p {
+    padding: 40px 0;
+    font-weight: 450;
+    color: var(--txt-desc);
+    line-height: 1.40;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1200px) {
+
+    .badge {
+        padding: clamp(6px, 1.5vw, 24px);
+        border-radius: clamp(6px, 1.5vw, 12px);
+        font-size: clamp(14px, 3.5vw, 36px);
+        height: clamp(35px, 9vw, 80px);
+    }
+
+    .badge.ecommerce {
+        font-size: clamp(14px, 3.5vw, 36px);
+        height: clamp(35px, 9vw, 80px);
+    }
+
+    .badge.foodtech {
+        font-size: clamp(14px, 3.5vw, 36px);
+        height: clamp(35px, 9vw, 80px);
+    }
+
+    .badge.user {
+        padding: clamp(4px, 1vw, 16px);
+        font-size: clamp(12px, 3vw, 28px);
+        height: clamp(30px, 7vw, 60px);
+    }
+
+    .badge.fintech {
+        font-size: clamp(14px, 3.5vw, 36px);
+        height: clamp(35px, 9vw, 80px);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .headlinewrapper h1 {
+        font-size: clamp(2rem, 8vw, 4rem);
+        letter-spacing: -2px;
+        white-space: nowrap;
+    }
+
+}
