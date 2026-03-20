@@ -18,22 +18,22 @@ export default function Footer() {
                         <div className={style.cols}>
 
                             <div className={style.col}>
-                                <p>Visualize your color choices.</p>
-                                <a href=""></a>
+                                <h2>sobre</h2>
+                                <p>Ferramenta para escolher cores para interfaces limpas e agradáveis.</p>
                             </div>
 
                             <div className={style.col}>
                                 <h2>explorar</h2>
-                                <a href="">Docs</a>
-                                <a href="">Blog post template</a>
-                                <a href="">Color Game</a>
+                                <a href="/docs">Docs</a>
+                                <a href="/blog">Blog post template</a>
+                                <a href="/game">Color Game</a>
                             </div>
 
                             <div className={style.col}>
                                 <h2>contato</h2>
-                                <a href="https://github.com/0980596" target="_blank">GitHub</a>
-                                <a href="https://www.linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/" target="_blank">Linkedin</a>
-                                <a href="https://portf-lio-nu-swart.vercel.app/" target="_blank">Portifolio</a>
+                                <a href="https://github.com/0980596" target="_blank" rel="noreferrer">GitHub</a>
+                                <a href="https://www.linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/" target="_blank" rel="noreferrer">Linkedin</a>
+                                <a href="https://portf-lio-nu-swart.vercel.app/" target="_blank" rel="noreferrer">Portifolio</a>
                             </div>
 
                         </div>

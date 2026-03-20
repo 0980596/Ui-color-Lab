@@ -46,8 +46,8 @@ export default function Header() {
                 </div>
 
                 <nav>
-                    <a target="_blank" href="https://github.com/0980596">GitHub</a>
-                    <a href="/post">Docs</a>
+                    <a target="_blank" rel="noreferrer" href="https://github.com/0980596">GitHub</a>
+                    <a href="/docs">Docs</a>
 
                     <button className={style.templates}>
                         Templates <ChevronDown />
@@ -69,8 +69,8 @@ export default function Header() {
                     <X />
                 </button>
                 <a href="/" onClick={(e) => handleLinkClick(e, "/")}>Home</a>
-                <a href="">Figma Plugin</a>
-                <a href="">Docs</a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/0980596">GitHub</a>
+                <a href="/docs">Docs</a>
                 <a href="/post" onClick={(e) => handleLinkClick(e, "/post")}>Blog Post</a>
             </div>
         </>
